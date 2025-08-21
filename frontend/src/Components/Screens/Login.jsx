@@ -102,7 +102,7 @@ function Login() {
             <div className="Loginname">
               <label htmlFor=""> Username:</label><br />
               <input type="text" name="username" id="username" autoComplete='off'
-               placeholder='codofile' 
+               placeholder='codebybit' 
                value={username}
                onChange={(e)=>setUsername(e.target.value)}
               //  value={values.username} 
@@ -116,7 +116,7 @@ function Login() {
             <div className="Loginname">
               <label htmlFor=""> Password:</label><br />
               <input type="password" name="pass" id="pass" autoComplete='off'
-               placeholder='codofile' 
+               placeholder='codebybit' 
                value={password}
                onChange={(e)=>setpassword(e.target.value)}
 

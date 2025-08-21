@@ -70,7 +70,7 @@ function Java() {
 
     const link = document.createElement("a");
     link.href = window.URL.createObjectURL(blob);
-    link.download = "codofile-dart.dart";
+    link.download = "codebybit-dart.dart";
     toast.success('File is Downloading...');
     link.click();
   }

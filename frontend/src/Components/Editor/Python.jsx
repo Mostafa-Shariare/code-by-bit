@@ -69,7 +69,7 @@ function Python() {
 
     const link = document.createElement("a");
     link.href = window.URL.createObjectURL(blob);
-    link.download = "codofile-python.py";
+    link.download = "codebybit-python.py";
     link.click();
   }
 

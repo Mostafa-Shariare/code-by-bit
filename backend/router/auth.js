@@ -141,7 +141,7 @@ router.post('/login', async (req,res)=>{
 
         if(userLogin===null){
             res.status(401).send("please register to login")
-            console.log(`Please register to login in codofile`)
+            console.log(`Please register to login in codebybit`)
         } 
         else{
             console.log(`Login Successful - Here is the Completed data`)

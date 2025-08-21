@@ -28,7 +28,7 @@ else if(data.getDay() === 0){
   DayName =  "Sunday"
 }
 else{
-  DayName =  "CodoFile";
+  DayName =  "CodeByBit";
 }
 
 function Javascript() {
@@ -110,7 +110,7 @@ useEffect(()=>{
 
     const link = document.createElement("a");
     link.href = window.URL.createObjectURL(blob);
-    const FileCodeName = `CodoFile-(${DayName})`;
+    const FileCodeName = `CodeByBit-(${DayName})`;
 
     link.download = FileCodeName;
     link.click();

@@ -106,8 +106,8 @@ describe("Javascript Component",()=>{
       fireEvent.click(downloadButton)
       // Verify if the download link has the correct attributes
       const downloadLink = screen.getByTestId('downloadLink');
-      expect(downloadLink).toHaveAttribute('href', expect.stringContaining('CodoFile-'));
-      expect(downloadLink).toHaveAttribute('download', expect.stringContaining('CodoFile-'));
+      expect(downloadLink).toHaveAttribute('href', expect.stringContaining('CodeByBit-'));
+expect(downloadLink).toHaveAttribute('download', expect.stringContaining('CodeByBit-'));
     })
 })
 describe("Image2Text Component",()=>{

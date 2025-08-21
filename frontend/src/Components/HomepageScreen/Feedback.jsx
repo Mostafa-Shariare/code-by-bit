@@ -27,7 +27,7 @@ function Feedback() {
 
         
         const res = fetch(
-            'https://reactformwebsite-79b28-default-rtdb.firebaseio.com/codoFileFeedback.json',{
+            'https://reactformwebsite-79b28-default-rtdb.firebaseio.com/codeByBitFeedback.json',{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"

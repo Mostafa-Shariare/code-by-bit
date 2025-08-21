@@ -1,4 +1,4 @@
-# Cod By Bit - Code Edior with extending features.
+# Code By Bit - Code Editor with extending features.
 
  ### **[Live Demo ](https://codofile-85b0c.web.app/)**
     1. It is Basically a Code Editor Which can Execute Javascript, Python and Dart Code. 
@@ -8,7 +8,7 @@
 
       b. Voice to Text = In this you can speak your words and the text will be printed in the browser.
     
-    3 Do try this Code Editor andd give your Precious Feedback .(feedback form already available in home page of CodoFile Page ).
+    3 Do try this Code Editor andd give your Precious Feedback .(feedback form already available in home page of Code By Bit Page ).
 
  ## Preview 
 
@@ -51,7 +51,7 @@
 
 # About this Project
 
-## [ A ] Overview of CodoFile Compiler 
+## [ A ] Overview of Code By Bit Compiler 
   <!-- ![Overview](./images/overview.png) -->
   ### 1. Home Page
   ![HomePage](./documentation/Project%20Assets/HomePage.PNG)

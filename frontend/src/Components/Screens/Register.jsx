@@ -124,7 +124,7 @@ function Register() {
                                 name="username" 
                                 id="username" 
                                 // autoComplete='off' 
-                                placeholder='codofile'
+                                placeholder='codebybit'
                                 value={user.username} 
                                 onChange={handleChange}
                                 // onBlur={handleBlur}
@@ -138,7 +138,7 @@ function Register() {
                                 name="email" 
                                 id="email" 
                                 // autoComplete='off' 
-                                placeholder='CodoFile@gmail.com' 
+                                placeholder='CodeByBit@gmail.com' 
                                 value={user.email} 
                                 onChange={handleChange}
                                 // onBlur={handleBlur}
