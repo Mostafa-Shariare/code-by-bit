@@ -1,94 +1,85 @@
 import React from 'react'
-// import Header from '../Header';
-import LandingPage from '../HomepageScreen/LandingPage';
-import CodingPage from '../HomepageScreen/CodingPage'; 
+import { NavLink } from 'react-router-dom'
 import ImageCod from '../../assets/JavaScript frameworks-rafiki.svg'
 import HtmlCod from '../../assets/Website Creator-amico.svg'
 import Pycod from '../../assets/Man reading-pana.svg'
 import SpeechCod from '../../assets/Speech to text-bro.svg'
 import CodJava from '../../assets/Coding-bro.svg'
 import ImagCod from '../../assets/Writing on the wall-rafiki.svg'
-// import MoreCod from '../../assets/Sponsor-rafiki.svg';
-import MoreCod from '../../assets/paralympic winners podium-pana.svg';
-import Feedback from '../HomepageScreen/Feedback';
-import Footer from '../HomepageScreen/Footer';
 
-function Homepage() { 
-
-  const width2 = window.outerWidth;
-
+function Homepage() {
   return (
     <>
-    <div className="smallScreen">
-      <mark>The Screen is Visible with width more than 250px <br/><br/><hr/><br/>Screen Size: {width2}px</mark>
-    </div>
-    <div className="container">
-        {/* <Header/>  */}
-        <LandingPage/> 
-        <CodingPage 
-          title="JavaScript Compiler"
-          con="Run JavaScript"
-          info={<>All The <mark>Logic</mark> That you need to Learn and Practice <mark> JavaScript </mark> will be Accomplished by this <mark> Js Text Editor </mark> .</>} 
-          path='/editor/javaScript' 
-          image={ImageCod}
-          // poss={{'flexDirection':'row'}}
-          
-        />
-        <CodingPage
-          title="Python Compiler"
-          con="Run Python"
-          path="/editor/python"
-          info={<>Leash out All your <mark> Logic and Understanding</mark> with the Easiest Programming Language <mark>Python</mark> in this Super Easy Web IDE</>}
-          image={Pycod}
-          // poss={{'flexDirection':'row-reverse'}}
-          uniId={"uni"}
-        />
-        <CodingPage
-          title="Dart Compiler"
-          path='/editor/java'
-          con="Run Dart"
-          info={<><mark>Dart</mark> is a Programming Language <mark>Developed by Google</mark> and it is use with <mark>Flutter </mark>to Create Mobile and Web Application .Embrace your <mark>Knowledge</mark> with <mark>Dart Code Editor</mark></>}
-          image={CodJava}
-          // poss={{'flexDirection':'row'}}
-        />
-        <CodingPage
-          title="Real-Time Website Editor"
-          path="/editor/html"
-          con="Try Web Editor"
-          info={<>
-            Bored Writing HTML codes in Editor then again and again refreshing Browser for Output?<br/>
-            <mark>Try</mark> our <mark>Real Time Browser</mark> that Automatically updates the Page as per your Code/Program.
-          </>}
-          image={HtmlCod}
-          // poss={{'flexDirection':'row-reverse'}}
-          uniId={"uni"}
-        />
-        <CodingPage
-          title="Image To Code"
-          path='/editor/image2text'
-          image={ImagCod}
-          con="Get Started"
-          info={<>
-            Turn Your <mark>Image into Reality</mark> with this amazing Feature of <mark>Image to Code</mark> Tool. 
-          </>}
-          // poss={{'flexDirection':'row'}}
-        />
-        <CodingPage
-          title="Voice To Code"
-          path='/editor/voice2text'
-          image={SpeechCod}
-          info={<>
-            <mark>"Words Speak more than Actions"</mark> let this quote get Install into your life by our latest tool <mark>Voice to Text</mark> feature .
-          </>}
-          con="Get Started"
-          // poss={{'flexDirection':'row-reverse'}}
-          uniId={"uni"}
-        />
-        
-        <Feedback/>
-        <Footer/>
-        {/* <a href="http://" target="_blank" rel="noopener noreferrer"></a> */}
-    </div>
+      <section className="home-hero">
+        <div className="home-hero__content">
+          <h1 className="home-hero__title">Build, Run and Learn Faster</h1>
+          <p className="home-hero__subtitle">Code By Bit is a lightweight web IDE for JavaScript, Python and Dart with real-time tools that help you iterate quickly.</p>
+          <div className="home-hero__actions">
+            <NavLink to="/editor/javascript" className="btn">Open JavaScript Editor</NavLink>
+            <NavLink to="/register" className="btn btn--ghost">Create Account</NavLink>
+          </div>
+        </div>
+        <div className="home-hero__backdrop" />
+      </section>
+
+      <section className="home-features">
+        <h2 className="home-section__title">Editors and Tools</h2>
+        <p className="home-section__subtitle">Everything you need to prototype ideas and practice coding, right in your browser.</p>
+        <div className="home-grid">
+          <article className="home-card">
+            <img src={ImageCod} alt="JavaScript" className="home-card__img"/>
+            <h3 className="home-card__title">JavaScript Editor</h3>
+            <p className="home-card__desc">Write and run JS instantly with an output console. Great for quick tests and learning.</p>
+            <NavLink className="home-card__link" to="/editor/javascript">Try JavaScript →</NavLink>
+          </article>
+
+          <article className="home-card">
+            <img src={Pycod} alt="Python" className="home-card__img"/>
+            <h3 className="home-card__title">Python Editor</h3>
+            <p className="home-card__desc">Server-executed Python with friendly error messages to help you debug faster.</p>
+            <NavLink className="home-card__link" to="/editor/python">Run Python →</NavLink>
+          </article>
+
+          <article className="home-card">
+            <img src={CodJava} alt="Dart" className="home-card__img"/>
+            <h3 className="home-card__title">Dart Editor</h3>
+            <p className="home-card__desc">Experiment with Dart syntax and output directly in the browser.</p>
+            <NavLink className="home-card__link" to="/editor/java">Run Dart →</NavLink>
+          </article>
+
+          <article className="home-card">
+            <img src={HtmlCod} alt="HTML" className="home-card__img"/>
+            <h3 className="home-card__title">Live Website Editor</h3>
+            <p className="home-card__desc">Edit HTML/CSS/JS and see results instantly without manual refresh.</p>
+            <NavLink className="home-card__link" to="/editor/html">Open Web Editor →</NavLink>
+          </article>
+
+          <article className="home-card">
+            <img src={ImagCod} alt="Image to Text" className="home-card__img"/>
+            <h3 className="home-card__title">Image to Text</h3>
+            <p className="home-card__desc">Extract readable text from images using in-browser OCR (Tesseract.js).</p>
+            <NavLink className="home-card__link" to="/editor/image2text">Convert Image →</NavLink>
+          </article>
+
+          <article className="home-card">
+            <img src={SpeechCod} alt="Voice to Text" className="home-card__img"/>
+            <h3 className="home-card__title">Voice to Text</h3>
+            <p className="home-card__desc">Transcribe your speech to text, then copy it to any editor.</p>
+            <NavLink className="home-card__link" to="/editor/voice2text">Start Speaking →</NavLink>
+          </article>
+        </div>
+      </section>
+
+      <section className="home-cta">
+        <div className="home-cta__content">
+          <h2>Ready to Code Faster?</h2>
+          <p>Create a free account to save your progress and get started with the editors.</p>
+          <div className="home-cta__actions">
+            <NavLink to="/register" className="btn">Get Started</NavLink>
+            <NavLink to="/login" className="btn btn--ghost">Sign In</NavLink>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
