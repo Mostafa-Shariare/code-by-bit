@@ -94,7 +94,7 @@ Testing:
 - https://www.copyscape.com/
 
 Deployment:
-- https://www.github.com/faizan619
+- https://www.github.com/YOUR_USERNAME
 - https://codofile-backend.onrender.com
 - https://codofile-85b0c.web.app
 - https://toffeeshare.com/

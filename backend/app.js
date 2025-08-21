@@ -18,7 +18,7 @@ const consoleURL = (req,res,next)=>{
 }
 
 app.get('/',consoleURL,(req,res)=>{
-    // res.cookie("test","faizan");
+    // res.cookie("test","mostafa");
     res.send('Hello world');
 })
 app.get('*',consoleURL,(req,res)=>{

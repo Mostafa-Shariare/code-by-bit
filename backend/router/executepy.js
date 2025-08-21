@@ -15,13 +15,13 @@ const executepy = (filepath)=>{
             `cd ${wayName} && python ${uniqueName}.py`,
             (error,stdout,stderr)=>{
                 if (error) {
-                    console.error("faizan-Python execution error:", error);
+                    console.error("mostafa-Python execution error:", error);
                     reject(error);
                 } else if (stderr) {
-                    console.error("faizan-Python stderr:", stderr);
+                    console.error("mostafa-Python stderr:", stderr);
                     reject(stderr);
                 } else {
-                    console.log("faizan-Python stdout:", stdout);
+                    console.log("mostafa-Python stdout:", stdout);
                     resolve(stdout);
                 }
             }

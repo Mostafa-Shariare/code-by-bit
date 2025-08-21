@@ -44,7 +44,7 @@ function Register() {
 
     // http://localhost:3000/register 
     // {
-    //     "username":"faizan",
+    //     "username":"mostafa",
     //     "email":"user10@gmail.com",
     //     "role":"web developer",
     //     "password":123456,

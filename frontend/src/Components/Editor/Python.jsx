@@ -38,7 +38,7 @@ function Python() {
         toast.remove();
         toast.error("An error Occured.");
       }
-      // console.log("Faizan Alam",data);
+      // console.log("Mostafa Shariare",data);
       // toast.remove();
       // toast.remove();
       // setCode("");

@@ -13,13 +13,13 @@ const executeDart = (filepath)=>{
             `cd ${wayName} && dart ${uniqueName}.dart`,
             (error,stdout,stderr)=>{
                 if (error) {
-                    console.error("faizan-Dart execution error:", error);
+                    console.error("mostafa-Dart execution error:", error);
                     reject(error);
                 } else if (stderr) {
-                    console.error("faizan-Dart stderr:", stderr);
+                    console.error("mostafa-Dart stderr:", stderr);
                     reject(stderr);
                 } else {
-                    console.log("faizan-Dart stdout:", stdout);
+                    console.log("mostafa-Dart stdout:", stdout);
                     resolve(stdout);
                 }
             }
