@@ -1627,11 +1627,124 @@ Responsive page Design
     justify-content: center;
 }
 
+/* Global link styles */
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: .95;
+}
+
+/* Home links tweaks */
+.home-card__link { text-decoration: none; }
+.home-card__link:hover { text-decoration: none; }
+
+/* =====================
+   Homepage additional sections
+   ===================== */
+.home-highlights {
+    padding: 2rem 1.5rem 1rem;
+}
+
+.home-highlights__grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.home-highlight {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.home-highlight__title { font-weight: 700; margin-bottom: .25rem; }
+.home-highlight__desc { color: var(--muted-text-color); font-size: .95rem; }
+
+.home-steps {
+    padding: 2rem 1.5rem;
+}
+
+.home-steps__grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.home-step {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.25rem;
+}
+
+.home-step__title { font-weight: 700; margin-bottom: .25rem; }
+.home-step__desc { color: var(--muted-text-color); }
+
+.home-stats {
+    padding: 1rem 1.5rem 2rem;
+}
+
+.home-stats__grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.home-stat {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.home-stat__num { font-size: 1.8rem; font-weight: 800; }
+.home-stat__label { color: var(--muted-text-color); font-size: .95rem; }
+
+.home-faq {
+    padding: 2rem 1.5rem 3rem;
+}
+
+.home-faq__grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.home-faq__item {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+}
+
+.home-faq__q { font-weight: 700; margin-bottom: .25rem; }
+.home-faq__a { color: var(--muted-text-color); }
+
 @media (max-width: 900px) {
     .home-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .home-highlights__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .home-steps__grid { grid-template-columns: 1fr; }
+    .home-stats__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 560px) {
     .home-grid { grid-template-columns: 1fr; }
     .home-hero { padding: 3.5rem 1rem; }
+    .home-highlights__grid { grid-template-columns: 1fr; }
+    .home-stats__grid { grid-template-columns: 1fr; }
 }

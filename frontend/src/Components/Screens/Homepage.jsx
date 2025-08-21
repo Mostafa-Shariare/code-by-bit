@@ -80,6 +80,85 @@ function Homepage() {
           </div>
         </div>
       </section>
+
+      <section className="home-highlights">
+        <div className="home-highlights__grid">
+          <div className="home-highlight">
+            <div className="home-highlight__title">Fast Iteration</div>
+            <div className="home-highlight__desc">Run code instantly in the browser or server with one click.</div>
+          </div>
+          <div className="home-highlight">
+            <div className="home-highlight__title">Clean UI</div>
+            <div className="home-highlight__desc">Minimal, modern design focused on reading and writing code.</div>
+          </div>
+          <div className="home-highlight">
+            <div className="home-highlight__title">Beginner Friendly</div>
+            <div className="home-highlight__desc">Helpful messages and simple flows to learn quickly.</div>
+          </div>
+          <div className="home-highlight">
+            <div className="home-highlight__title">Free to Use</div>
+            <div className="home-highlight__desc">No cost for core features. Start practicing today.</div>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-steps">
+        <h2 className="home-section__title">How it works</h2>
+        <p className="home-section__subtitle">Three simple steps to get started with Code By Bit.</p>
+        <div className="home-steps__grid">
+          <div className="home-step">
+            <div className="home-step__title">1. Pick a tool</div>
+            <div className="home-step__desc">Choose an editor or utility: JavaScript, Python, Dart, Live Web, or OCR/Voice.</div>
+          </div>
+          <div className="home-step">
+            <div className="home-step__title">2. Write your code</div>
+            <div className="home-step__desc">Use the editor to create, copy, or paste code. Adjust as you go.</div>
+          </div>
+          <div className="home-step">
+            <div className="home-step__title">3. Run and iterate</div>
+            <div className="home-step__desc">Run your program and read results instantly. Fix, refine, and learn.</div>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-stats">
+        <div className="home-stats__grid">
+          <div className="home-stat">
+            <div className="home-stat__num">3</div>
+            <div className="home-stat__label">Programming Languages</div>
+          </div>
+          <div className="home-stat">
+            <div className="home-stat__num">2</div>
+            <div className="home-stat__label">Productivity Tools</div>
+          </div>
+          <div className="home-stat">
+            <div className="home-stat__num">1s</div>
+            <div className="home-stat__label">Average Run Start</div>
+          </div>
+          <div className="home-stat">
+            <div className="home-stat__num">∞</div>
+            <div className="home-stat__label">Ideas to Explore</div>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-faq">
+        <h2 className="home-section__title">Frequently Asked Questions</h2>
+        <div className="home-faq__grid">
+          <div className="home-faq__item">
+            <div className="home-faq__q">Is Code By Bit free?</div>
+            <div className="home-faq__a">Yes. The core editors and tools are free to use.</div>
+          </div>
+          <div className="home-faq__item">
+            <div className="home-faq__q">Do I need to install anything?</div>
+            <div className="home-faq__a">No. Everything runs in your browser, with server support for Python and Dart.</div>
+          </div>
+          <div className="home-faq__item">
+            <div className="home-faq__q">Can I save my work?</div>
+            <div className="home-faq__a">You can download files locally; account-based saving can be added later.</div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
