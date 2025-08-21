@@ -1,6 +1,6 @@
 # Code By Bit - Code Editor with extending features.
 
- ### **[Live Demo ](https://codofile-85b0c.web.app/)**
+ ### **[Live Demo ](https://codebybit-85b0c.web.app/)**
     1. It is Basically a Code Editor Which can Execute Javascript, Python and Dart Code. 
 
     2 .It have Two Features:
@@ -12,8 +12,8 @@
 
  ## Preview 
 
- ### 1. *[Frontend Demo](https://codofile-85b0c.web.app/)*
- ### 2. *[Backend Demo](https://codofile-backend.onrender.com/)*
+ ### 1. *[Frontend Demo](https://codebybit-85b0c.web.app/)*
+ ### 2. *[Backend Demo](https://codebybit-backend.onrender.com/)*
   
   ## Requirement
 
@@ -27,7 +27,7 @@
   ## Installation 
     1. Open Command Prompt\ Terminal
 
-    2. git clone https://github.com/faizan619/Code-By-Bit.git
+    2. git clone https://github.com/YOUR_USERNAME/Code-By-Bit.git
 
     3. cd .\Code-By-Bit\
 
